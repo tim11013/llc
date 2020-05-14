@@ -61,6 +61,7 @@ header h1.logo {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
+  border-radius: 5px;
 }
 
 header h1.logo a {
