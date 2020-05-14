@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grid Layout</title>
-  <link rel="stylesheet" href="/dist/css/all.min.css">
+  <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
   <header class="header item">
@@ -132,13 +132,12 @@
   </section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.js"></script>
   <script>
-    window.onload = function(){
-      new Masonry('body',{
-        itemSelector: '.item',
-        columnWidth: 180,
-        gutter: 4
-      });
-    }
+    new Masonry('body',{
+      itemSelector: '.item',
+      columnWidth: 180,
+      gutter: 4
+    });
+    
   </script>
 </body>
 </html>
