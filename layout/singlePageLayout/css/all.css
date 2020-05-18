@@ -1,0 +1,329 @@
+* {
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #333;
+  font-size: 1rem;
+  font-family: "Microsoft JhengHei",Meiryo,sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li, ol li {
+  margin: 0;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  background: #151515 url("../images/bg.png") no-repeat fixed left bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Raleway", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.header {
+  padding: 170px 30px 80px;
+}
+
+.header .site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+
+.header .site-title-sub::before, .header .site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.header .site-title {
+  margin: 50px 0 40px;
+  font-size: 7.6rem;
+}
+
+.header .site-description {
+  margin-top: 50px;
+  color: #888;
+  font-size: 1.6rem;
+}
+
+.btn, .btn-showy, .btn-ghost {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.btn:hover, .btn-showy:hover, .btn-ghost:hover {
+  opacity: .8;
+}
+
+.btn-showy {
+  background-color: #f1b400;
+}
+
+.btn-ghost {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+section .heading {
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  position: relative;
+  display: inline-block;
+}
+
+section .heading::before, section .heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #999;
+}
+
+section .heading::before {
+  bottom: 5px;
+}
+
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+
+.about .about-text {
+  margin: 30px 0;
+  font-size: 1.4rem;
+  line-height: 2.5;
+}
+
+.works {
+  padding: 80px 0;
+  background-color: #383634;
+}
+
+.works .work-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+
+.works .work-wrapper .work-box {
+  display: table-cell;
+  position: relative;
+}
+
+.works .work-wrapper .work-box .work-img {
+  width: 100%;
+  margin: 0 0 60%;
+}
+
+.works .work-wrapper .work-box .work-img img {
+  width: 100%;
+  display: block;
+}
+
+.works .work-wrapper .work-box .work-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.works .work-wrapper .work-box .work-description .work-description-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.works .work-wrapper .work-box .work-description .work-description-inner .work-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.works .work-wrapper .work-box .work-description .work-description-inner .work-text .btn, .works .work-wrapper .work-box .work-description .work-description-inner .work-text .btn-showy, .works .work-wrapper .work-box .work-description .work-description-inner .work-text .btn-ghost {
+  width: 60%;
+  margin: 20px 0 0;
+  padding: 3px;
+}
+
+.works .work-wrapper .work-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: no-repeat;
+  background-size: 100% 100%;
+  opacity: .2;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+.works .work-wrapper .work-box.tree::after {
+  background-image: url("../images/tree.jpg");
+}
+
+.works .work-wrapper .work-box.building::after {
+  background-image: url("../images/building.jpg");
+}
+
+.works .work-wrapper .work-box.lake::after {
+  background-image: url("../images/lake.jpg");
+}
+
+.works .work-wrapper .work-box.sky::after {
+  background-image: url("../images/sky.jpg");
+}
+
+.works .work-wrapper .work-box:nth-child(odd) .work-img {
+  margin: 60% 0 0;
+}
+
+.works .work-wrapper .work-box:nth-child(odd) .work-description, .works .work-wrapper .work-box:nth-child(odd)::after {
+  top: 0;
+}
+
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.skills .skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+
+.skills .skills-wrapper .skill-box {
+  display: table-cell;
+}
+
+.skills .skills-wrapper .skill-box .skill-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+  line-height: 142px;
+}
+
+.skills .skills-wrapper .skill-box .skill-title {
+  margin: 0 20px 20px;
+  font-size: 2rem;
+}
+
+.skills .skills-wrapper .skill-box .skill-text {
+  margin: 0 20px;
+  line-height: 2;
+}
+
+.contact {
+  padding: 80px 0 150px;
+}
+
+.contact .contact-form {
+  width: 50%;
+  margin: 50px auto 0;
+}
+
+.contact .form-style, .contact textarea, .contact input[type=text] {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  outline: none;
+}
+
+.contact .form-style:focus, .contact textarea:focus, .contact input:focus[type=text] {
+  -webkit-box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+          box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+
+.contact textarea {
+  height: 150px;
+}
+
+.contact input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: point;
+}
+
+.contact input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=all.css.map */
